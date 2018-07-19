@@ -1,0 +1,13 @@
+.panel.directions {
+	border: none;
+}
+
+.directions .panel-header {
+	text-align: center;
+	padding-top: 0.4rem;
+}
+
+.directions .panel-body {
+	height: 500px;
+	background: #E4E4E4;
+}

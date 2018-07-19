@@ -1,0 +1,209 @@
+#room-cards-container {
+	margin-top: -20rem;
+	position: relative;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-bottom: 1rem;
+}
+
+#room-cards-container .columns {
+	display: flex;
+	justify-content: center;
+}
+
+#room-cards-container .card.card-rooms {
+	border: none;
+	margin-bottom: 0;
+	-webkit-box-shadow: 0px 5px 10px 2px rgba(163,163,163,1);
+	-moz-box-shadow: 0px 5px 10px 2px rgba(163,163,163,1);
+	box-shadow: 0px 5px 10px 2px rgba(163,163,163,1);
+}
+
+#room-cards-container .card.card-rooms .card-header {
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+#room-cards-container .card.img-left {
+	border: none;
+	display: flex;
+	flex-direction: row;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	-webkit-box-shadow: 0px 5px 10px 2px rgba(163,163,163,1);
+	-moz-box-shadow: 0px 5px 10px 2px rgba(163,163,163,1);
+	box-shadow: 0px 5px 10px 2px rgba(163,163,163,1);
+}
+
+#room-cards-container .card.img-left > .card-img {
+	width: 60%;
+	height: 30rem;
+	left: 0;
+	overflow: hidden;
+}
+
+#room-cards-container .card.img-left > .card-img > img {
+	height: 100%;
+	width: auto;
+}
+
+#room-cards-container .card.img-left > .card-body {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	width: 40%;
+	background: #E4E4E4;
+}
+
+#room-cards-container .card.img-right {
+	border: none;
+	display: flex;
+	flex-direction: row;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	-webkit-box-shadow: 0px 5px 10px 2px rgba(163,163,163,1);
+	-moz-box-shadow: 0px 5px 10px 2px rgba(163,163,163,1);
+	box-shadow: 0px 5px 10px 2px rgba(163,163,163,1);
+}
+
+#room-cards-container .card.img-right > .card-img {
+	width: 60%;
+	height: 30rem;
+	overflow: hidden;
+}
+
+#room-cards-container .card.img-right > .card-img > img {
+	height: 100%;
+	width: auto;
+}
+
+#room-cards-container .card.img-right > .card-body {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	width: 40%;
+	background: #E4E4E4;
+	left: 0;
+}
+
+.card {
+	margin-bottom: 2rem;
+	margin-top: 1rem;
+}
+
+.card.homepage-hero {
+	margin-top: -8rem;
+	margin-bottom: 3rem;
+	padding-top: 1rem;
+	background: #516D62;
+	border: none;
+}
+
+.card.homepage-hero .card-body {
+	color: #F4F4F4;
+	font-size: 1rem;
+}
+
+.card.homepage-hero .card-header h1 {
+	color: #FFF;
+}
+
+.card.homepage-hero .card-footer button.btn.btn-lg {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	padding: 1rem 3rem 2rem 3rem;
+	font-weight: 600;
+	border-radius: 0;
+	text-transform: uppercase;
+	font-family: "Trajan Pro", Trajan, "Trajan Pro 3", serif;
+}
+
+.card.rooms-hero {
+	margin-top: -40rem;
+	margin-bottom: 3rem;
+	padding-top: 1rem;
+	background: #516D62;
+	border: none;
+}
+
+.card.rooms-hero .card-body {
+	color: #F4F4F4;
+	font-size: 1rem;
+}
+
+.card.rooms-hero .card-header h1 {
+	color: #FFF;
+}
+
+.card.rooms-hero .card-footer button.btn.btn-lg {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	padding: 1rem 3rem 2rem 3rem;
+	font-weight: 600;
+	border-radius: 0;
+	text-transform: uppercase;
+	font-family: "Trajan Pro", Trajan, "Trajan Pro 3", serif;
+}
+
+.card.img-top .card-header,
+.card.img-top .card-body,
+.card.img-top .card-footer,
+.card.img-top .card-img {
+	background: #E4E4E4;
+}
+
+.card.img-left {
+	border: none;
+	display: flex;
+	flex-direction: row;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.card.img-left > .card-img {
+	width: 60%;
+	height: 90vh;
+	left: 0;
+}
+
+.card.img-left > .card-img > img {
+	height: 100%;
+	width: auto;
+}
+
+.card.img-left > .card-body {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	width: 40%;
+	background: #E4E4E4;
+}
+
+.card.img-right {
+	border: none;
+	display: flex;
+	flex-direction: row;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.card.img-right > .card-img {
+	width: 60%;
+	height: 90vh;
+}
+
+.card.img-right > .card-img > img {
+	height: 100%;
+	width: auto;
+}
+
+.card.img-right > .card-body {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	width: 40%;
+	background: #E4E4E4;
+	left: 0;
+}

@@ -1,0 +1,79 @@
+.navbar.hide-md {
+	min-height: 100px;
+	display: flex;
+	width: 100%;
+	background: #516D62;
+	padding-left: 1.4rem;
+	padding-right: 1.4rem;
+	z-index: 10;
+}
+
+.navbar .navbar-section img.navbar-logo {
+	padding: 0.4rem 1rem 0.4rem 0;
+	width: 200px;
+}
+
+.navbar.hide-md .navbar-section a {
+	color: #FFF;
+}
+
+#hamburger-btn {
+	padding-top: 0.5rem;
+	padding-left: 0.5rem;
+	z-index: 10;
+}
+
+#hamburger-btn:hover {
+	cursor: pointer;
+}
+
+#mobile-links {
+	background: #FFF;
+	width: 100vw;
+	overflow: auto;
+}
+
+#mobile-links > .menu.menu-nav {
+	text-align: right;
+	width: 100%;
+	z-index: 0;
+}
+
+#mobile-links > .menu.menu-nav:hover {
+	cursor: pointer;
+}
+
+#mobile-links > .menu.menu-nav > .menu-item > .accordion > .accordion-body > .menu.menu-nav > .menu-item a {
+	padding-right: 1rem;
+}
+
+#desktop-links > .popover {
+	height: 100%;
+}
+
+#desktop-links > .popover > .btn.btn-link {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	font-family: "Trajan Pro", Trajan, "Trajan Pro 3", serif;
+}
+
+#desktop-links .btn.btn-link.active {
+	border-bottom: 0.4rem solid white;
+	background: #678A7C;
+}
+
+#desktop-links .popover-container {
+	width: auto;
+	margin-top: -1.4rem;
+	text-align: center;
+}
+
+#desktop-links .popover-container > .card > .menu > .menu-item {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#desktop-links .popover-container > .card > .menu.menu-nav > .menu-item a{
+	color: #516D62;
+}

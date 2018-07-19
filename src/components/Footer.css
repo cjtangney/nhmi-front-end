@@ -1,0 +1,26 @@
+footer > .navbar {
+	height: 50px;
+	width: 100%;
+	background: #516D62;
+	padding-left: 1.4rem;
+	padding-right: 1.4rem;
+}
+
+footer > .navbar > .navbar-section {
+	color: #FFF;
+}
+
+footer > .navbar > .navbar-section > a {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	color: #FFF;
+}
+
+footer > .navbar > .navbar-section > a.btn.btn-link:focus, 
+footer > .navbar > .navbar-section > a.btn.btn-link:hover, 
+footer > .navbar > .navbar-section > a.btn.btn-link:active, 
+footer > .navbar > .navbar-section > a.btn.btn-link.active {
+    background: #678A7C;
+    color: #FFF;
+}

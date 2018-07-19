@@ -1,0 +1,10 @@
+/* variable overrides */
+$primary-color: #516D62;
+
+/* import spectre */
+@import "../../../node_modules/spectre.css/src/spectre";
+
+/* other overrides */
+h1, h2, h3, h4, h5, h6 {
+	color: $primary-color;
+}
