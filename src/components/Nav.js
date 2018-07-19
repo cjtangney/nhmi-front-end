@@ -28,7 +28,7 @@ const MobileNav = (e) => {
 		          <div className='accordion-body'>
 		            <ul className='menu menu-nav'>
 		            	<li className='menu-item'><a href='/rooms'>Our Rooms</a></li>
-		              <li className='menu-item'><a href=''>Courtyard - North</a></li>
+		              <li className='menu-item'><a href='/courtyard-north'>Courtyard - North</a></li>
 		              <li className='menu-item'><a href=''>Courtyard - South</a></li>
 		              <li className='menu-item'><a href=''>Eagle Pond Room</a></li>
 		              <li className='menu-item'><a href=''>Humming Bird Room</a></li>
@@ -129,7 +129,7 @@ const Nav = (e) => {
 
 	return (
 		/* NAVBAR */
-		<div className='navbar hide-md fixed'>
+		<div className='navbar hide-md fixed' id='desktop-nav'>
 		  <section className='navbar-section'>
 		  	<a href='/'><img src={Logo} className='navbar-logo' alt='New Hampshire Mountain Inn' /></a>
 		  </section>
@@ -140,7 +140,7 @@ const Nav = (e) => {
 		  			<div className='card'>
 		  				<ul className='menu menu-nav'>
 		  					<li className='menu-item'><a href='/rooms'>Our Rooms</a></li>
-						    <li className='menu-item'><a href=''>Courtyard - North</a></li>
+						    <li className='menu-item'><a href='/courtyard-north'>Courtyard - North</a></li>
 						    <li className='menu-item'><a href=''>Courtyard - South</a></li>
 						    <li className='menu-item'><a href=''>Eagle Pond Room</a></li>
 						    <li className='menu-item'><a href=''>Humming Bird Room</a></li>
