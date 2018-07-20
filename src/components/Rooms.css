@@ -1,6 +1,18 @@
 #room-header {
-	background: red;
+	background: #678A7C;
 	width: 100%;
-	height: 100px;
+	min-height: 8rem;
+	color: #EEE;
+	display: flex;
+	align-items: center;
+	padding: 0.4rem 2rem 0.4rem 2rem;
+	justify-content: center;
 	position: relative;
+	top: 120px;
+}
+
+#room-header h1, #room-header h2,
+#room-header h3, #room-header h4,
+#room-header h5, #room-header h6 {
+	color: #FFF;
 }

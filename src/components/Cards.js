@@ -28,10 +28,10 @@ const CardImgLeft = (e) => {
 		/* CARD */
 		<div className='card img-left'>
 			<div className='card-img'>
-				<img src={Image2} alt='An image' />
+				<img src={e.imgSrc} alt={e.altTxt} />
 			</div>
 			<div className='card-body'>
-				Card body. A bunch of text can go here. Elit magnis a ultricies parturient lectus lacus adipiscing vestibulum consectetur posuere a ullamcorper condimentum a nostra consequat a fames vehicula natoque imperdiet tristique justo vestibulum scelerisque euismod. Quis imperdiet dis vulputate vestibulum netus senectus risus mi ut non condimentum parturient in duis ultrices.
+				{e.cardBody}
 			</div>
 		</div>
 	);
@@ -42,10 +42,10 @@ const CardImgRight = (e) => {
 		/* CARD */
 		<div className='card img-right'>
 			<div className='card-body'>
-				Card body. A bunch of text can go here. Elit magnis a ultricies parturient lectus lacus adipiscing vestibulum consectetur posuere a ullamcorper condimentum a nostra consequat a fames vehicula natoque imperdiet tristique justo vestibulum scelerisque euismod. Quis imperdiet dis vulputate vestibulum netus senectus risus mi ut non condimentum parturient in duis ultrices.
+				{e.cardBody}
 			</div>
 			<div className='card-img'>
-				<img src={Image3} alt='An image' />
+				<img src={e.imgSrc} alt={e.altTxt} />
 			</div>
 		</div>
 	);
@@ -91,19 +91,30 @@ const CardRooms = (e) => {
 		/* CARD */
 		<div className='card card-rooms'>
 			<div className='card-img'>
-				<img src={Image1} alt='An image' width='100%' />
+				<img src={e.imgSrc} alt={e.altTxt} width='100%' />
 			</div>
 			<div className='card-header'>
-				Room Name
+				<h5>{e.cardHeader}</h5>
 			</div>
 			<div className='card-body'>
-				Card body. A bunch of text can go here. Elit magnis a ultricies parturient lectus lacus adipiscing vestibulum consectetur posuere a ullamcorper condimentum a nostra consequat a fames vehicula natoque imperdiet tristique justo vestibulum scelerisque euismod. Quis imperdiet dis vulputate vestibulum netus senectus risus mi ut non condimentum parturient in duis ultrices.
+				{e.cardBody}
 			</div>
 			<div className='card-footer'>
-				Card footer. Can put things like buttons here, etc
+				{e.cardFooter}
 			</div>
 		</div>
 	);
 }
 
-export { CardImgTop, CardImgLeft, CardImgRight, CardHomeHero, CardRoomsHero, CardRooms };
+const CardInfo = (e) => {
+	return(
+		/* CARD */
+		<div className='card card-rooms centered'>
+			<div className='card-body'>
+				{e.cardBody}
+			</div>
+		</div>
+	);
+}
+
+export { CardImgTop, CardImgLeft, CardImgRight, CardHomeHero, CardRoomsHero, CardRooms, CardInfo };

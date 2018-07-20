@@ -1,19 +1,25 @@
+.header-container {
+	width: 100%;
+	position: fixed;
+	z-index: 10;
+}
+
 .navbar.hide-md {
 	display: flex;
 	width: 100%;
 	background: #516D62;
 	padding-left: 1.4rem;
 	padding-right: 1.4rem;
-	z-index: 10;
 }
 
 .navbar .navbar-section img.navbar-logo {
 	padding: 0.4rem 1rem 0.4rem 0;
-	width: 200px;
+	height: 120px;
 }
 
-.navbar.hide-md .navbar-section a {
+.navbar.hide-md .navbar-section > a {
 	color: #FFF;
+	line-height: 0;
 }
 
 #hamburger-btn {
@@ -51,6 +57,7 @@
 }
 
 #desktop-links > .popover > .btn.btn-link {
+	color: #FFF;
 	height: 100%;
 	display: flex;
 	align-items: center;

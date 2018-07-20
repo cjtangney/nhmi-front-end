@@ -29,16 +29,16 @@ const MobileNav = (e) => {
 		            <ul className='menu menu-nav'>
 		            	<li className='menu-item'><a href='/rooms'>Our Rooms</a></li>
 		              <li className='menu-item'><a href='/courtyard-north'>Courtyard - North</a></li>
-		              <li className='menu-item'><a href=''>Courtyard - South</a></li>
-		              <li className='menu-item'><a href=''>Eagle Pond Room</a></li>
-		              <li className='menu-item'><a href=''>Humming Bird Room</a></li>
-		              <li className='menu-item'><a href=''>Kearsarge Room</a></li>
-		              <li className='menu-item'><a href=''>Library Room</a></li>
-		              <li className='menu-item'><a href=''>Meadow Room</a></li>
-		              <li className='menu-item'><a href=''>Quilt Room</a></li>
-		              <li className='menu-item'><a href=''>Timber Room</a></li>
-		              <li className='menu-item'><a href=''>Stableside Suite</a></li>
-		              <li className='menu-item'><a href=''>Vanderbilt Suite</a></li>
+		              <li className='menu-item'><a href='/courtyard-south'>Courtyard - South</a></li>
+		              <li className='menu-item'><a href='/eagle-pond-room'>Eagle Pond Room</a></li>
+		              <li className='menu-item'><a href='/hummingbird-room'>Hummingbird Room</a></li>
+		              <li className='menu-item'><a href='/kearsarge-room'>Kearsarge Room</a></li>
+		              <li className='menu-item'><a href='/library-room'>Library Room</a></li>
+		              <li className='menu-item'><a href='/meadow-room'>Meadow Room</a></li>
+		              <li className='menu-item'><a href='/quilt-room'>Quilt Room</a></li>
+		              <li className='menu-item'><a href='/timber-room'>Timber Room</a></li>
+		              <li className='menu-item'><a href='/stableside-suite'>Stableside Suite</a></li>
+		              <li className='menu-item'><a href='/vanderbilt-suite'>Vanderbilt Suite</a></li>
 		            </ul>
 		          </div>
 		        </details>
@@ -129,34 +129,34 @@ const Nav = (e) => {
 
 	return (
 		/* NAVBAR */
-		<div className='navbar hide-md fixed' id='desktop-nav'>
+		<div className='navbar hide-md' id='desktop-nav'>
 		  <section className='navbar-section'>
 		  	<a href='/'><img src={Logo} className='navbar-logo' alt='New Hampshire Mountain Inn' /></a>
 		  </section>
 		  <section className='navbar-section' id='desktop-links'>
 		  	<div className='popover popover-bottom'>
-		  		<a href='' className='btn btn-link' onMouseEnter={onEnter} onMouseLeave={onExit}>ROOMS &amp; RATES</a>
+		  		<a className='btn btn-link' onMouseEnter={onEnter} onMouseLeave={onExit}>ROOMS &amp; RATES</a>
 		  		<div className='popover-container'>
 		  			<div className='card'>
 		  				<ul className='menu menu-nav'>
 		  					<li className='menu-item'><a href='/rooms'>Our Rooms</a></li>
-						    <li className='menu-item'><a href='/courtyard-north'>Courtyard - North</a></li>
-						    <li className='menu-item'><a href=''>Courtyard - South</a></li>
-						    <li className='menu-item'><a href=''>Eagle Pond Room</a></li>
-						    <li className='menu-item'><a href=''>Humming Bird Room</a></li>
-						    <li className='menu-item'><a href=''>Kearsarge Room</a></li>
-						    <li className='menu-item'><a href=''>Library Room</a></li>
-						    <li className='menu-item'><a href=''>Meadow Room</a></li>
-						    <li className='menu-item'><a href=''>Quilt Room</a></li>
-						    <li className='menu-item'><a href=''>Timber Room</a></li>
-						    <li className='menu-item'><a href=''>Stableside Suite</a></li>
-						    <li className='menu-item'><a href=''>Vanderbilt Suite</a></li>
+	              <li className='menu-item'><a href='/courtyard-north'>Courtyard - North</a></li>
+	              <li className='menu-item'><a href='/courtyard-south'>Courtyard - South</a></li>
+	              <li className='menu-item'><a href='/eagle-pond-room'>Eagle Pond Room</a></li>
+	              <li className='menu-item'><a href='/hummingbird-room'>Hummingbird Room</a></li>
+	              <li className='menu-item'><a href='/kearsarge-room'>Kearsarge Room</a></li>
+	              <li className='menu-item'><a href='/library-room'>Library Room</a></li>
+	              <li className='menu-item'><a href='/meadow-room'>Meadow Room</a></li>
+	              <li className='menu-item'><a href='/quilt-room'>Quilt Room</a></li>
+	              <li className='menu-item'><a href='/timber-room'>Timber Room</a></li>
+	              <li className='menu-item'><a href='/stableside-suite'>Stableside Suite</a></li>
+	              <li className='menu-item'><a href='/vanderbilt-suite'>Vanderbilt Suite</a></li>
 						  </ul>
 		  			</div>
 		  		</div>
 		  	</div>
 		  	<div className='popover popover-bottom'>
-		    	<a href='' className='btn btn-link' onMouseEnter={onEnter} onMouseLeave={onExit}>DINING</a>
+		    	<a className='btn btn-link' onMouseEnter={onEnter} onMouseLeave={onExit}>DINING</a>
 		    	<div className='popover-container'>
 		    		<div className='card'>
 			    		<ul className='menu menu-nav'>
@@ -167,7 +167,7 @@ const Nav = (e) => {
 		    	</div>
 	    	</div>
 				<div className='popover popover-bottom'>
-		    	<a href='' className='btn btn-link' onMouseEnter={onEnter} onMouseLeave={onExit}>EVENTS</a>
+		    	<a className='btn btn-link' onMouseEnter={onEnter} onMouseLeave={onExit}>EVENTS</a>
 		    	<div className='popover-container'>
 		    		<div className='card'>
 			    		<ul className='menu menu-nav'>
@@ -179,7 +179,7 @@ const Nav = (e) => {
 		    	</div>
 		    </div>
 				<div className='popover popover-bottom'>
-		    	<a href='' className='btn btn-link' onMouseEnter={onEnter} onMouseLeave={onExit}>SPECIALS</a>
+		    	<a className='btn btn-link' onMouseEnter={onEnter} onMouseLeave={onExit}>SPECIALS</a>
 		    	<div className='popover-container'>
 		    		<div className='card'>
 			    		<ul className='menu menu-nav'>
@@ -191,7 +191,7 @@ const Nav = (e) => {
 		    	</div>
 		    </div>
 	    	<div className='popover popover-bottom'>
-		    	<a href='' className='btn btn-link' onMouseEnter={onEnter} onMouseLeave={onExit}>ABOUT US</a>
+		    	<a className='btn btn-link' onMouseEnter={onEnter} onMouseLeave={onExit}>ABOUT US</a>
 		    	<div className='popover-container'>
 		    		<div className='card'>
 			    		<ul className='menu menu-nav'>

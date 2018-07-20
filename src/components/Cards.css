@@ -1,9 +1,10 @@
 #room-cards-container {
-	margin-top: -20rem;
-	position: relative;
 	padding-left: 1rem;
 	padding-right: 1rem;
-	padding-bottom: 1rem;
+	padding-bottom: 2rem;
+	position: relative;
+	top: -30rem;
+	margin-bottom: -30rem;
 }
 
 #room-cards-container .columns {
@@ -38,7 +39,7 @@
 
 #room-cards-container .card.img-left > .card-img {
 	width: 60%;
-	height: 30rem;
+	min-height: 20rem;
 	left: 0;
 	overflow: hidden;
 }
@@ -49,11 +50,11 @@
 }
 
 #room-cards-container .card.img-left > .card-body {
-	text-align: center;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	width: 40%;
-	background: #E4E4E4;
+	background: #FFF;
 }
 
 #room-cards-container .card.img-right {
@@ -70,7 +71,7 @@
 
 #room-cards-container .card.img-right > .card-img {
 	width: 60%;
-	height: 30rem;
+	min-height: 20rem;
 	overflow: hidden;
 }
 
@@ -80,17 +81,38 @@
 }
 
 #room-cards-container .card.img-right > .card-body {
-	text-align: center;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	width: 40%;
-	background: #E4E4E4;
+	background: #FFF;
 	left: 0;
+}
+
+#room-cards-container table {
+	border-top: 0.05rem solid #e7e9ed;;
+	margin-top: -0.4rem;
+	margin-bottom: 1.4rem;
 }
 
 .card {
 	margin-bottom: 2rem;
 	margin-top: 1rem;
+}
+.card .card-footer button {
+	margin-top: -1rem;
+	padding: 1rem 3rem 2rem 3rem;
+	border-radius: 0;
+	text-transform: uppercase;
+	font-family: "Trajan Pro", Trajan, "Trajan Pro 3", serif;	
+}
+
+.card .card-body button {
+	margin-top: 2rem;
+	padding: 1rem 3rem 2rem 3rem;
+	border-radius: 0;
+	text-transform: uppercase;
+	font-family: "Trajan Pro", Trajan, "Trajan Pro 3", serif;	
 }
 
 .card.homepage-hero {
@@ -121,7 +143,6 @@
 }
 
 .card.rooms-hero {
-	margin-top: -40rem;
 	margin-bottom: 3rem;
 	padding-top: 1rem;
 	background: #516D62;
@@ -166,10 +187,15 @@
 	width: 60%;
 	height: 90vh;
 	left: 0;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .card.img-left > .card-img > img {
-	height: 100%;
+	flex-shrink: 0;
+	min-height: 100%;
 	width: auto;
 }
 
@@ -192,10 +218,15 @@
 .card.img-right > .card-img {
 	width: 60%;
 	height: 90vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .card.img-right > .card-img > img {
-	height: 100%;
+	flex-shrink: 0;
+	min-height: 100%;
 	width: auto;
 }
 

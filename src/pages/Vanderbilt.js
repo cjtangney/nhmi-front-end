@@ -6,18 +6,16 @@ import '../../node_modules/spectre.css/dist/spectre-icons.min.css';
 
 import '../components/Rooms.css';
 
-import Image1 from '../res/img/home-carousel-01.jpg';
+import Image1 from '../res/img/home-carousel-03.jpg';
 
 import { MobileNav, Nav } from '../components/Nav';
 import { RoomCoverImage } from '../components/CoverImage';
 import { CardImgLeft } from '../components/Cards';
 import { Footer } from '../components/Footer';
 
-class CourtyardNorth extends React.Component {
+class Vanderbilt extends React.Component {
   constructor(props) {
     super(props);
-
-    this.state = {headerMargin: ''};
   }
   render() {
     return (
@@ -28,7 +26,7 @@ class CourtyardNorth extends React.Component {
       	</header>
         <div className='clearfix'></div>
         <div id='room-header'>
-          <h1>Courtyard &ndash; North</h1>
+          <h1>Vanderbilt Suite</h1>
         </div>
       	<div>
       		<RoomCoverImage src={Image1}/>
@@ -38,8 +36,8 @@ class CourtyardNorth extends React.Component {
             <div className='column col-12'>
               <CardImgLeft imgSrc={Image1} className='img-responsive' cardBody={
                 <div>
-                  <h2>Courtyard &ndash; North</h2>
-                  <p className='text-large'>With beautiful views overlooking our small garden courtyard, the North Courtyard room is perfect for a weekend getaway!</p>
+                  <h2>Vanderbilt Suite</h2>
+                  <p className='text-large'>A luxurious and romantic three room suite, The Vanderbilt Suite has plenty of charm. With ample space, this suite is the perfect spot for a week-long getaway or just to unwind with a soak after a long day on the slopes at Ragged Mountain Resort.</p>
                   <h3>Amenities</h3>
                   <table className='table text-center'>
                     <tbody>
@@ -47,13 +45,16 @@ class CourtyardNorth extends React.Component {
                         <td>King-sized bed</td>
                       </tr>
                       <tr>
-                        <td>Private shower and bath</td>
+                        <td>Fireplace</td>
                       </tr>
                       <tr>
-                        <td>Item</td>
+                        <td>Sitting room</td>
                       </tr>
                       <tr>
-                        <td>Item</td>
+                        <td>Private bathroom</td>
+                      </tr>
+                      <tr>
+                        <td>Marble bath</td>
                       </tr>
                     </tbody>
                   </table>
@@ -65,8 +66,8 @@ class CourtyardNorth extends React.Component {
                         <td><strong>Weekend</strong></td>
                       </tr>
                       <tr>
-                        <td>$170.00</td>
-                        <td>$190.00</td>
+                        <td>$270.00</td>
+                        <td>$290.00</td>
                       </tr>
                     </tbody>
                   </table>
@@ -82,4 +83,4 @@ class CourtyardNorth extends React.Component {
   }
 }
 
-export default CourtyardNorth;
+export default Vanderbilt;

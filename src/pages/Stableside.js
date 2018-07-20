@@ -6,18 +6,16 @@ import '../../node_modules/spectre.css/dist/spectre-icons.min.css';
 
 import '../components/Rooms.css';
 
-import Image1 from '../res/img/home-carousel-01.jpg';
+import Image1 from '../res/img/home-carousel-02.jpg';
 
 import { MobileNav, Nav } from '../components/Nav';
 import { RoomCoverImage } from '../components/CoverImage';
 import { CardImgLeft } from '../components/Cards';
 import { Footer } from '../components/Footer';
 
-class CourtyardNorth extends React.Component {
+class Stableside extends React.Component {
   constructor(props) {
     super(props);
-
-    this.state = {headerMargin: ''};
   }
   render() {
     return (
@@ -28,7 +26,7 @@ class CourtyardNorth extends React.Component {
       	</header>
         <div className='clearfix'></div>
         <div id='room-header'>
-          <h1>Courtyard &ndash; North</h1>
+          <h1>Stableside Suite</h1>
         </div>
       	<div>
       		<RoomCoverImage src={Image1}/>
@@ -38,22 +36,22 @@ class CourtyardNorth extends React.Component {
             <div className='column col-12'>
               <CardImgLeft imgSrc={Image1} className='img-responsive' cardBody={
                 <div>
-                  <h2>Courtyard &ndash; North</h2>
-                  <p className='text-large'>With beautiful views overlooking our small garden courtyard, the North Courtyard room is perfect for a weekend getaway!</p>
+                  <h2>Stableside Suite</h2>
+                  <p className='text-large'>A two room suite located toward the back side of the house, the Stableside Suite is the perfect accomodation for a family, large group, or bridal party. Sleeping up to six guests comfortably, the Stableside Suite is also one of our pet friendly options.</p>
                   <h3>Amenities</h3>
                   <table className='table text-center'>
                     <tbody>
                       <tr>
-                        <td>King-sized bed</td>
+                        <td>Two queen-sized beds</td>
                       </tr>
                       <tr>
-                        <td>Private shower and bath</td>
+                        <td>Twin daybed</td>
                       </tr>
                       <tr>
-                        <td>Item</td>
+                        <td>Pullout couch</td>
                       </tr>
                       <tr>
-                        <td>Item</td>
+                        <td>Pet-friendly</td>
                       </tr>
                     </tbody>
                   </table>
@@ -65,8 +63,8 @@ class CourtyardNorth extends React.Component {
                         <td><strong>Weekend</strong></td>
                       </tr>
                       <tr>
-                        <td>$170.00</td>
-                        <td>$190.00</td>
+                        <td>$290.00</td>
+                        <td>$310.00</td>
                       </tr>
                     </tbody>
                   </table>
@@ -82,4 +80,4 @@ class CourtyardNorth extends React.Component {
   }
 }
 
-export default CourtyardNorth;
+export default Stableside;

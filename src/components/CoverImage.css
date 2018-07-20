@@ -1,4 +1,12 @@
 #cover-image {
+	/* calculate height - nav height */
+	height: 100vh;
+	width: 100%;
+	margin-bottom: 3rem;
+}
+
+#room-cover-image {
+	/* calculate height - nav + room header */
 	height: 100vh;
 	width: 100%;
 	margin-bottom: 3rem;

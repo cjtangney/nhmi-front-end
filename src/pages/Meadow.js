@@ -6,14 +6,14 @@ import '../../node_modules/spectre.css/dist/spectre-icons.min.css';
 
 import '../components/Rooms.css';
 
-import Image1 from '../res/img/home-carousel-01.jpg';
+import Image1 from '../res/img/home-carousel-03.jpg';
 
 import { MobileNav, Nav } from '../components/Nav';
 import { RoomCoverImage } from '../components/CoverImage';
 import { CardImgLeft } from '../components/Cards';
 import { Footer } from '../components/Footer';
 
-class CourtyardNorth extends React.Component {
+class Meadow extends React.Component {
   constructor(props) {
     super(props);
 
@@ -28,7 +28,7 @@ class CourtyardNorth extends React.Component {
       	</header>
         <div className='clearfix'></div>
         <div id='room-header'>
-          <h1>Courtyard &ndash; North</h1>
+          <h1>Meadow Room</h1>
         </div>
       	<div>
       		<RoomCoverImage src={Image1}/>
@@ -38,19 +38,19 @@ class CourtyardNorth extends React.Component {
             <div className='column col-12'>
               <CardImgLeft imgSrc={Image1} className='img-responsive' cardBody={
                 <div>
-                  <h2>Courtyard &ndash; North</h2>
-                  <p className='text-large'>With beautiful views overlooking our small garden courtyard, the North Courtyard room is perfect for a weekend getaway!</p>
+                  <h2>Meadow Room</h2>
+                  <p className='text-large'>Situated on the main level of the house, the Meadow Room is a lovely accomodation that comes complete with oak furnishings and offers sweeping views of the rolling lawns just outside. Book this room together with the adjacent Hummingbird Room to form the ideal family suite!</p>
                   <h3>Amenities</h3>
                   <table className='table text-center'>
                     <tbody>
                       <tr>
-                        <td>King-sized bed</td>
+                        <td>Queen-sized bed</td>
                       </tr>
                       <tr>
-                        <td>Private shower and bath</td>
+                        <td>Oak furnishings</td>
                       </tr>
                       <tr>
-                        <td>Item</td>
+                        <td>Shared bathroom</td>
                       </tr>
                       <tr>
                         <td>Item</td>
@@ -65,8 +65,8 @@ class CourtyardNorth extends React.Component {
                         <td><strong>Weekend</strong></td>
                       </tr>
                       <tr>
-                        <td>$170.00</td>
-                        <td>$190.00</td>
+                        <td>$140.00</td>
+                        <td>$160.00</td>
                       </tr>
                     </tbody>
                   </table>
@@ -82,4 +82,4 @@ class CourtyardNorth extends React.Component {
   }
 }
 
-export default CourtyardNorth;
+export default Meadow;

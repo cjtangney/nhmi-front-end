@@ -5,6 +5,9 @@ import '../../node_modules/spectre.css/dist/spectre-exp.min.css';
 import '../../node_modules/spectre.css/dist/spectre-icons.min.css';
 
 import Image1 from '../res/img/home-carousel-01.jpg';
+import Image2 from '../res/img/home-carousel-02.jpg';
+import Image3 from '../res/img/home-carousel-03.jpg';
+//import Image4 from '../res/img/home-carousel-04.jpg';
 
 import { MobileNav, Nav } from '../components/Nav';
 import { CoverImage } from '../components/CoverImage';
@@ -16,7 +19,7 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-      	<header>
+      	<header className='header-container'>
       		<MobileNav />
       		<Nav />
       	</header>
@@ -40,8 +43,12 @@ class Home extends React.Component {
     		</div>
 
     		<div className='hide-md'>
-					<CardImgLeft />
-					<CardImgRight />
+					<CardImgLeft imgSrc={Image2} altTxt='Alt text' cardBody={
+            'Card body. A bunch of text can go here. Elit magnis a ultricies parturient lectus lacus adipiscing vestibulum consectetur posuere a ullamcorper condimentum a nostra consequat a fames vehicula natoque imperdiet tristique justo vestibulum scelerisque euismod. Quis imperdiet dis vulputate vestibulum netus senectus risus mi ut non condimentum parturient in duis ultrices.'
+          }/>
+					<CardImgRight imgSrc={Image3} altTxt='Alt text' cardBody={
+            'Card body. A bunch of text can go here. Elit magnis a ultricies parturient lectus lacus adipiscing vestibulum consectetur posuere a ullamcorper condimentum a nostra consequat a fames vehicula natoque imperdiet tristique justo vestibulum scelerisque euismod. Quis imperdiet dis vulputate vestibulum netus senectus risus mi ut non condimentum parturient in duis ultrices.'
+          }/>
 				</div>
 
 				<div className='show-md'>

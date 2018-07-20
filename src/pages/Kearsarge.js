@@ -13,7 +13,7 @@ import { RoomCoverImage } from '../components/CoverImage';
 import { CardImgLeft } from '../components/Cards';
 import { Footer } from '../components/Footer';
 
-class CourtyardNorth extends React.Component {
+class Kearsarge extends React.Component {
   constructor(props) {
     super(props);
 
@@ -28,7 +28,7 @@ class CourtyardNorth extends React.Component {
       	</header>
         <div className='clearfix'></div>
         <div id='room-header'>
-          <h1>Courtyard &ndash; North</h1>
+          <h1>Kearsarge Room</h1>
         </div>
       	<div>
       		<RoomCoverImage src={Image1}/>
@@ -38,8 +38,8 @@ class CourtyardNorth extends React.Component {
             <div className='column col-12'>
               <CardImgLeft imgSrc={Image1} className='img-responsive' cardBody={
                 <div>
-                  <h2>Courtyard &ndash; North</h2>
-                  <p className='text-large'>With beautiful views overlooking our small garden courtyard, the North Courtyard room is perfect for a weekend getaway!</p>
+                  <h2>Kearsarge Room</h2>
+                  <p className='text-large'>The Kearsarge Room is one of our more secluded rooms, complete with views of the pond, sprawling lawns, and picturesque mountainside -- perfect for a romantic, weekend getaway!</p>
                   <h3>Amenities</h3>
                   <table className='table text-center'>
                     <tbody>
@@ -47,13 +47,16 @@ class CourtyardNorth extends React.Component {
                         <td>King-sized bed</td>
                       </tr>
                       <tr>
-                        <td>Private shower and bath</td>
+                        <td>Full-sized futon</td>
                       </tr>
                       <tr>
-                        <td>Item</td>
+                        <td>Fireplace</td>
                       </tr>
                       <tr>
-                        <td>Item</td>
+                        <td>Private bathroom</td>
+                      </tr>
+                      <tr>
+                        <td>Jetted tub</td>
                       </tr>
                     </tbody>
                   </table>
@@ -65,8 +68,8 @@ class CourtyardNorth extends React.Component {
                         <td><strong>Weekend</strong></td>
                       </tr>
                       <tr>
-                        <td>$170.00</td>
-                        <td>$190.00</td>
+                        <td>$210.00</td>
+                        <td>$230.00</td>
                       </tr>
                     </tbody>
                   </table>
@@ -82,4 +85,4 @@ class CourtyardNorth extends React.Component {
   }
 }
 
-export default CourtyardNorth;
+export default Kearsarge;
