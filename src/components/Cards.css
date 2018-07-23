@@ -1,4 +1,5 @@
-#room-cards-container {
+#room-cards-container,
+#dining-cards-container {
 	padding-left: 1rem;
 	padding-right: 1rem;
 	padding-bottom: 2rem;
@@ -7,25 +8,14 @@
 	margin-bottom: -30rem;
 }
 
-#room-cards-container .columns {
+#room-cards-container .columns,
+#dining-cards-container .columns {
 	display: flex;
 	justify-content: center;
 }
 
-#room-cards-container .card.card-rooms {
-	border: none;
-	margin-bottom: 0;
-	-webkit-box-shadow: 0px 5px 10px 2px rgba(163,163,163,1);
-	-moz-box-shadow: 0px 5px 10px 2px rgba(163,163,163,1);
-	box-shadow: 0px 5px 10px 2px rgba(163,163,163,1);
-}
-
-#room-cards-container .card.card-rooms .card-header {
-	font-size: 1rem;
-	font-weight: 500;
-}
-
-#room-cards-container .card.img-left {
+#room-cards-container .card.img-left,
+#dining-cards-container .card.img-left {
 	border: none;
 	display: flex;
 	flex-direction: row;
@@ -37,19 +27,22 @@
 	box-shadow: 0px 5px 10px 2px rgba(163,163,163,1);
 }
 
-#room-cards-container .card.img-left > .card-img {
+#room-cards-container .card.img-left > .card-img,
+#dining-cards-container .card.img-left > .card-img {
 	width: 60%;
 	min-height: 20rem;
 	left: 0;
 	overflow: hidden;
 }
 
-#room-cards-container .card.img-left > .card-img > img {
+#room-cards-container .card.img-left > .card-img > img,
+#dining-cards-container .card.img-left > .card-img > img {
 	height: 100%;
 	width: auto;
 }
 
-#room-cards-container .card.img-left > .card-body {
+#room-cards-container .card.img-left > .card-body,
+#dining-cards-container .card.img-left > .card-body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -57,7 +50,8 @@
 	background: #FFF;
 }
 
-#room-cards-container .card.img-right {
+#room-cards-container .card.img-right,
+#dining-cards-container .card.img-right {
 	border: none;
 	display: flex;
 	flex-direction: row;
@@ -69,18 +63,21 @@
 	box-shadow: 0px 5px 10px 2px rgba(163,163,163,1);
 }
 
-#room-cards-container .card.img-right > .card-img {
+#room-cards-container .card.img-right > .card-img,
+#dining-cards-container .card.img-right > .card-img {
 	width: 60%;
 	min-height: 20rem;
 	overflow: hidden;
 }
 
-#room-cards-container .card.img-right > .card-img > img {
+#room-cards-container .card.img-right > .card-img > img,
+#dining-cards-container .card.img-right > .card-img > img {
 	height: 100%;
 	width: auto;
 }
 
-#room-cards-container .card.img-right > .card-body {
+#room-cards-container .card.img-right > .card-body,
+#dining-cards-container .card.img-right > .card-body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -89,7 +86,8 @@
 	left: 0;
 }
 
-#room-cards-container table {
+#room-cards-container table,
+#dining-cards-container table {
 	border-top: 0.05rem solid #e7e9ed;;
 	margin-top: -0.4rem;
 	margin-bottom: 1.4rem;
@@ -99,6 +97,7 @@
 	margin-bottom: 2rem;
 	margin-top: 1rem;
 }
+
 .card .card-footer button {
 	margin-top: -1rem;
 	padding: 1rem 3rem 2rem 3rem;
@@ -113,6 +112,13 @@
 	border-radius: 0;
 	text-transform: uppercase;
 	font-family: "Trajan Pro", Trajan, "Trajan Pro 3", serif;	
+}
+
+.card.card-rooms { 
+	border: none;
+	-webkit-box-shadow: 0px 5px 10px 2px rgba(163,163,163,1);
+	-moz-box-shadow: 0px 5px 10px 2px rgba(163,163,163,1);
+	box-shadow: 0px 5px 10px 2px rgba(163,163,163,1);
 }
 
 .card.homepage-hero {
@@ -142,23 +148,42 @@
 	font-family: "Trajan Pro", Trajan, "Trajan Pro 3", serif;
 }
 
-.card.rooms-hero {
+.card.rooms-hero,
+.card.dining-hero {
 	margin-bottom: 3rem;
-	padding-top: 1rem;
 	background: #516D62;
 	border: none;
 }
 
-.card.rooms-hero .card-body {
+.card.dining-hero.img-left {
+	margin-bottom: 3rem !important;
+}
+
+.card.rooms-hero {
+	padding-top: 1rem;
+}
+
+.card.rooms-hero .card-body,
+.card.dining-hero .card-body {
 	color: #F4F4F4;
 	font-size: 1rem;
 }
 
-.card.rooms-hero .card-header h1 {
+.card.dining-hero.img-left .card-body {
+	background: #516D62 !important;
+}
+
+.card.rooms-hero .card-header h1,
+.card.dining-hero .card-header h1 {
 	color: #FFF;
 }
 
-.card.rooms-hero .card-footer button.btn.btn-lg {
+.card.dining-hero.img-left .card-body h1 {
+	color: #FFF;
+}
+
+.card.rooms-hero .card-footer button.btn.btn-lg,
+.card.dining-hero .card-footer button.btn.btn-lg {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 	padding: 1rem 3rem 2rem 3rem;

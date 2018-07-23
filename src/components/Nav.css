@@ -48,6 +48,17 @@
 	cursor: pointer;
 }
 
+#mobile-links .menu-item > .accordion.d-block > .accordion-header > a,
+#mobile-links .menu-item > .accordion.d-block > .accordion-header > a:hover,
+#mobile-links .menu-item > .accordion.d-block > .accordion-header > a:visited {
+	color: inherit;
+}
+
+#mobile-links .menu-item > .accordion.d-block > .accordion-header > a:hover,
+#mobile-links .menu-item > .accordion.d-block > .accordion-header > a:visited {
+	text-decoration: none;
+}
+
 #mobile-links > .menu.menu-nav > .menu-item > .accordion > .accordion-body > .menu.menu-nav > .menu-item a {
 	padding-right: 1rem;
 }

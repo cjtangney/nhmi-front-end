@@ -13,7 +13,7 @@ import { MobileNav, Nav } from '../components/Nav';
 import { CoverImage } from '../components/CoverImage';
 import { CardImgTop, CardImgLeft, CardImgRight, CardHomeHero } from '../components/Cards';
 import { Footer } from '../components/Footer';
-import { DirectionPane } from '../components/Directions'
+import { DirectionPane } from '../components/Directions';
 
 class Home extends React.Component {
   render() {
@@ -24,7 +24,7 @@ class Home extends React.Component {
       		<Nav />
       	</header>
       	<div>
-      		<CoverImage src={Image1}/>
+      		<CoverImage imgSrc={Image1}/>
       	</div>
     		<div className='columns'>
     			<div className='column col-8 col-mx-auto'>
@@ -64,7 +64,7 @@ class Home extends React.Component {
       			</div>
       		</div>
       	</div>
-      	<DirectionPane />
+      	<DirectionPane title='Having trouble finding us?'/>
       	<Footer />
       </div>
     );

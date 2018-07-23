@@ -45,16 +45,17 @@ const MobileNav = (e) => {
 		      </li>
 
 		      <li className='menu-item'>
-		        {/* dining */}
-		        <details className='accordion d-block'>
+		        {/* specials */}
+		        <details className='accordion'>
 		          <summary className='accordion-header'>
-		            DINING &nbsp;
+		            SPECIALS &nbsp;
 		            <i className='icon icon-arrow-left mr-1 dark-grey'></i>
 		          </summary>
 		          <div className='accordion-body'>
 		            <ul className='menu menu-nav'>
-		              <li className='menu-item'><a href=''>Breakfast</a></li>
-		              <li className='menu-item'><a href=''>Dinner</a></li>
+		              <li className='menu-item'><a href=''>Ongoing Deals</a></li>
+		              <li className='menu-item'><a href=''>Gift Certificates</a></li>
+		              <li className='menu-item'><a href=''>Special Offers</a></li>
 		            </ul>
 		          </div>
 		        </details>
@@ -78,19 +79,12 @@ const MobileNav = (e) => {
 		      </li>
 
 		      <li className='menu-item'>
-		        {/* specials */}
-		        <details className='accordion'>
+		        {/* dining */}
+		        <details className='accordion d-block'>
 		          <summary className='accordion-header'>
-		            SPECIALS &nbsp;
+		            <a href='/dining'>DINING &nbsp;</a>
 		            <i className='icon icon-arrow-left mr-1 dark-grey'></i>
 		          </summary>
-		          <div className='accordion-body'>
-		            <ul className='menu menu-nav'>
-		              <li className='menu-item'><a href=''>Ongoing Deals</a></li>
-		              <li className='menu-item'><a href=''>Gift Certificates</a></li>
-		              <li className='menu-item'><a href=''>Special Offers</a></li>
-		            </ul>
-		          </div>
 		        </details>
 		      </li>
 
@@ -103,10 +97,10 @@ const MobileNav = (e) => {
 		          </summary>
 		          <div className='accordion-body'>
 		            <ul className='menu menu-nav'>
-		              <li className='menu-item'><a href=''>About the Inn</a></li>
+		              <li className='menu-item'><a href='/about-us'>About the Inn</a></li>
 		              <li className='menu-item'><a href=''>Policies</a></li>
 		              <li className='menu-item'><a href=''>Area Attractions</a></li>
-		              <li className='menu-item'><a href=''>Directions</a></li>
+		              <li className='menu-item'><a href='/about-us#directions'>Directions</a></li>
 		            </ul>
 		          </div>
 		        </details>
@@ -134,6 +128,7 @@ const Nav = (e) => {
 		  	<a href='/'><img src={Logo} className='navbar-logo' alt='New Hampshire Mountain Inn' /></a>
 		  </section>
 		  <section className='navbar-section' id='desktop-links'>
+				{/* rooms */}		
 		  	<div className='popover popover-bottom'>
 		  		<a className='btn btn-link' onMouseEnter={onEnter} onMouseLeave={onExit}>ROOMS &amp; RATES</a>
 		  		<div className='popover-container'>
@@ -155,30 +150,9 @@ const Nav = (e) => {
 		  			</div>
 		  		</div>
 		  	</div>
+
+		  	{/* specials */}
 		  	<div className='popover popover-bottom'>
-		    	<a className='btn btn-link' onMouseEnter={onEnter} onMouseLeave={onExit}>DINING</a>
-		    	<div className='popover-container'>
-		    		<div className='card'>
-			    		<ul className='menu menu-nav'>
-	              <li className='menu-item'><a href=''>Breakfast</a></li>
-	              <li className='menu-item'><a href=''>Dinner</a></li>
-	            </ul>
-	           </div>
-		    	</div>
-	    	</div>
-				<div className='popover popover-bottom'>
-		    	<a className='btn btn-link' onMouseEnter={onEnter} onMouseLeave={onExit}>EVENTS</a>
-		    	<div className='popover-container'>
-		    		<div className='card'>
-			    		<ul className='menu menu-nav'>
-	              <li className='menu-item'><a href=''>Weddings</a></li>
-	              <li className='menu-item'><a href=''>Corporate Gatherings</a></li>
-	              <li className='menu-item'><a href=''>Reunions</a></li>
-	            </ul>
-            </div>
-		    	</div>
-		    </div>
-				<div className='popover popover-bottom'>
 		    	<a className='btn btn-link' onMouseEnter={onEnter} onMouseLeave={onExit}>SPECIALS</a>
 		    	<div className='popover-container'>
 		    		<div className='card'>
@@ -190,19 +164,40 @@ const Nav = (e) => {
             </div>
 		    	</div>
 		    </div>
+
+		  	{/* events */}
+		    <div className='popover popover-bottom'>
+		    	<a className='btn btn-link' onMouseEnter={onEnter} onMouseLeave={onExit}>EVENTS</a>
+		    	<div className='popover-container'>
+		    		<div className='card'>
+			    		<ul className='menu menu-nav'>
+	              <li className='menu-item'><a href=''>Weddings</a></li>
+	              <li className='menu-item'><a href=''>Corporate Gatherings</a></li>
+	              <li className='menu-item'><a href=''>Reunions</a></li>
+	            </ul>
+            </div>
+		    	</div>
+		    </div>
+
+  			{/* dining */}
+		    <div className='popover popover-bottom'>
+		    	<a href='/dining' className='btn btn-link' onMouseEnter={onEnter} onMouseLeave={onExit}>DINING</a>
+	    	</div>	
+
+		  	{/* about us */}
 	    	<div className='popover popover-bottom'>
 		    	<a className='btn btn-link' onMouseEnter={onEnter} onMouseLeave={onExit}>ABOUT US</a>
 		    	<div className='popover-container'>
 		    		<div className='card'>
 			    		<ul className='menu menu-nav'>
-	              <li className='menu-item'><a href=''>About the Inn</a></li>
+	              <li className='menu-item'><a href='/about-us'>About the Inn</a></li>
 	              <li className='menu-item'><a href=''>Policies</a></li>
 	              <li className='menu-item'><a href=''>Area Attractions</a></li>
-	              <li className='menu-item'><a href=''>Directions</a></li>
+	              <li className='menu-item'><a href='/about-us#directions'>Directions</a></li>
             	</ul>
             </div>
 		    	</div>
-		    </div>
+		    </div> 
 		  </section>
 		</div>
 	);

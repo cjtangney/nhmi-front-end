@@ -8,3 +8,20 @@ $primary-color: #516D62;
 h1, h2, h3, h4, h5, h6 {
 	color: $primary-color;
 }
+
+#about-divider.divider.text-center {
+	padding-bottom: 2rem;
+}
+
+#about-divider.divider.text-center[data-content]::after {
+	color: $primary-color;
+	font-size: 1.4rem;
+	font-weight: 400;
+	-ms-transform: translateY(-1rem);
+  -webkit-transform: translateY(-1rem);
+  transform: translateY(-1rem);
+}
+
+.v-center {
+	align-items: center;
+}

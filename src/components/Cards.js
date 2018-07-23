@@ -77,10 +77,24 @@ const CardRoomsHero = (e) => {
 			</div>
 			<div className='card-body'>
 				<p>Whether you're looking for a quaint room for the evening or an extravagant suite for a weekend getaway, we're certain to have something suited to your tastes. Select one of the rooms below to learn more!</p>
-				<sub>All rates are based on double occupancy. An fee of $35.00 per night will be charged per additional guest.</sub>
+				<sub>All rates are based on double occupancy. A fee of $35.00 per night will be charged per additional guest.</sub>
 			</div>
 			<div className='card-footer'>
 				<button className='btn btn-lg'>Book your stay today!</button>
+			</div>
+		</div>
+	);
+}
+
+const CardDiningHero = (e) => {
+	return (
+		/* CARD */
+		<div className='card dining-hero img-left'>
+			<div className='card-img'>
+				<img src={e.imgSrc} alt={e.altTxt} />
+			</div>
+			<div className='card-body'>
+				{e.cardBody}
 			</div>
 		</div>
 	);
@@ -117,4 +131,4 @@ const CardInfo = (e) => {
 	);
 }
 
-export { CardImgTop, CardImgLeft, CardImgRight, CardHomeHero, CardRoomsHero, CardRooms, CardInfo };
+export { CardImgTop, CardImgLeft, CardImgRight, CardHomeHero, CardRoomsHero, CardDiningHero, CardRooms, CardInfo };

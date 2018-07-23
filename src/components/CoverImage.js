@@ -6,7 +6,7 @@ const CoverImage = (e) => {
 	return(
 		/* COVER IMAGE */
 		<section>
-	  	<img src={e.src} alt='The New Hampshire Mountain Inn' className='img-responsive img-fit-cover' id='cover-image' />
+	  	<img src={e.imgSrc} alt='The New Hampshire Mountain Inn' className='img-responsive img-fit-cover' id='cover-image' />
 	  </section>
 	);
 }
@@ -14,7 +14,7 @@ const CoverImage = (e) => {
 const RoomCoverImage = (e) => {
 	return(
 		<section>
-			<img src={e.src} alt='The New Hampshire Mountain Inn' className='img-responsive img-fit-cover' id='room-cover-image' />
+			<img src={e.imgSrc} alt='The New Hampshire Mountain Inn' className='img-responsive img-fit-cover' id='room-cover-image' />
 		</section>
 	);
 }

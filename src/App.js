@@ -14,6 +14,8 @@ import Quilt from './pages/Quilt';
 import Timber from './pages/Timber';
 import Stableside from './pages/Stableside';
 import Vanderbilt from './pages/Vanderbilt';
+import Dining from './pages/Dining';
+import About from './pages/About';
 
 import './App.css';
 
@@ -32,6 +34,8 @@ const App = () => (
     <Route exact path="/timber-room" component={Timber} />
     <Route exact path="/stableside-suite" component={Stableside} />
     <Route exact path="/vanderbilt-suite" component={Vanderbilt} />
+    <Route exact path="/dining" component={Dining} />
+    <Route exact path="/about-us" component={About} />
   </Switch>
 );
 

@@ -6,6 +6,7 @@ import '../../node_modules/spectre.css/dist/spectre-icons.min.css';
 
 import '../components/Rooms.css';
 
+import CoverImg from '../res/img/cover-image.jpg'
 import Image1 from '../res/img/home-carousel-01.jpg';
 
 import { MobileNav, Nav } from '../components/Nav';
@@ -31,7 +32,7 @@ class CourtyardNorth extends React.Component {
           <h1>Courtyard &ndash; North</h1>
         </div>
       	<div>
-      		<RoomCoverImage src={Image1}/>
+      		<RoomCoverImage imgSrc={CoverImg}/>
       	</div>
         <div className='container grid-xl' id='room-cards-container'>
           <div className='columns'>
@@ -48,12 +49,6 @@ class CourtyardNorth extends React.Component {
                       </tr>
                       <tr>
                         <td>Private shower and bath</td>
-                      </tr>
-                      <tr>
-                        <td>Item</td>
-                      </tr>
-                      <tr>
-                        <td>Item</td>
                       </tr>
                     </tbody>
                   </table>

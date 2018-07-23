@@ -1,4 +1,4 @@
-/* overrides */
+/* variable overrides */
 /* import spectre */
 /*! Spectre.css v0.5.3 | MIT License | github.com/picturepan2/spectre */
 /* Manually forked from Normalize.css */
@@ -2750,7 +2750,22 @@ a.text-error:visited {
   word-break: break-word;
   word-wrap: break-word; }
 
+/* other overrides */
 h1, h2, h3, h4, h5, h6 {
   color: #516D62; }
+
+#about-divider.divider.text-center {
+  padding-bottom: 2rem; }
+
+#about-divider.divider.text-center[data-content]::after {
+  color: #516D62;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -ms-transform: translateY(-1rem);
+  -webkit-transform: translateY(-1rem);
+  transform: translateY(-1rem); }
+
+.v-center {
+  align-items: center; }
 
 /*# sourceMappingURL=spectre-overrides.css.map */

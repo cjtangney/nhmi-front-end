@@ -4,6 +4,7 @@ import '../components/spectre-overrides.css';
 import '../../node_modules/spectre.css/dist/spectre-exp.min.css';
 import '../../node_modules/spectre.css/dist/spectre-icons.min.css';
 
+import CoverImg from '../res/img/cover-image.jpg'
 import Image1 from '../res/img/home-carousel-01.jpg';
 import Image2 from '../res/img/home-carousel-02.jpg';
 import Image3 from '../res/img/home-carousel-03.jpg';
@@ -23,7 +24,7 @@ class Rooms extends React.Component {
       		<Nav />
       	</header>
       	<div>
-      		<CoverImage src={Image2} />
+      		<CoverImage imgSrc={CoverImg} />
       	</div>
 
         <div className='container grid-xl' id='room-cards-container'>
