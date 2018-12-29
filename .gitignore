@@ -11,4 +11,4 @@ build
 .env.test.local
 .env.production.local
 
-img
+src/res/img
