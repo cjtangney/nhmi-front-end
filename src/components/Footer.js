@@ -11,7 +11,7 @@ const Footer = (e) => {
 			  </section>
 			  <section className='navbar-section'>
 			  	<a href='' className='btn btn-link'>Contact Us</a>
-			    <a href='' className='btn btn-link'>Inn Policies</a>
+			    <a href='/policies' className='btn btn-link'>Inn Policies</a>
 			    <a href='' className='btn btn-link'>E-club</a>
 			    <a href='' className='btn btn-link'>Accessibility Policy</a>
 			  </section>

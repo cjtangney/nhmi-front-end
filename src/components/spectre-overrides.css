@@ -2761,11 +2761,48 @@ h1, h2, h3, h4, h5, h6 {
   color: #516D62;
   font-size: 1.4rem;
   font-weight: 400;
+  font-family: "Trajan Pro", Trajan, "Trajan Pro 3", serif;
   -ms-transform: translateY(-1rem);
   -webkit-transform: translateY(-1rem);
   transform: translateY(-1rem); }
 
+#policies-divider.divider.text-center {
+  padding-bottom: 2rem; }
+
+#policies-divider.divider.text-center[data-content]::after {
+  color: #516D62;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: "Trajan Pro", Trajan, "Trajan Pro 3", serif;
+  -ms-transform: translateY(-1rem);
+  -webkit-transform: translateY(-1rem);
+  transform: translateY(-1rem); }
+
+ul.policy-list {
+  list-style-type: none;
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem; }
+
+ol.policy-list {
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+  counter-reset: item; }
+  ol.policy-list li {
+    text-indent: -1.4em;
+    list-style-type: none;
+    counter-increment: item; }
+    ol.policy-list li:before {
+      display: inline-block;
+      width: 1.4em;
+      padding-right: 0.4em;
+      font-weight: bold;
+      text-align: right;
+      content: counter(item) "."; }
+
 .v-center {
   align-items: center; }
+
+.full-height {
+  height: 100%; }
 
 /*# sourceMappingURL=spectre-overrides.css.map */

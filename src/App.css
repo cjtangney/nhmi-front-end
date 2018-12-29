@@ -7,3 +7,8 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Trajan Pro", Trajan, "Trajan Pro 3", serif;
 }
+
+.trip-advisor-container {
+	margin-top: -1rem;
+	margin-bottom: 3rem;
+}
