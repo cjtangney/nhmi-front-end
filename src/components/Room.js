@@ -16,8 +16,8 @@ class Room extends React.Component {
     }
   }
   findRoom = () => {
-    for(let i = 0; i < this.props.data.length; i++){
-      let list = this.props.data[i];
+    for(let i = 0; i < this.props.roomData.length; i++){
+      let list = this.props.roomData[i];
       for(let k = 0; k < list.length; k++){
         let key = this.createSlug(list[k].Name);
         if(key === this.props.match.params.room){
@@ -47,14 +47,12 @@ class Room extends React.Component {
   render() {
     //console.log(this.props.match.params.room);
     return (
+      <div>
+      
+      <div id='room-header'>
+        <h1>{this.state.room['Name']}</h1>
+      </div>
       <div className='full-height'>
-        <div className='clearfix'></div>
-        <div id='room-header'>
-          <h1>{this.state.room['Name']}</h1>
-        </div>
-      	<div>
-      		<RoomCoverImage imgSrc={CoverImg}/>
-      	</div>
         <div className='container grid-xl' id='cover-img-overlay'>
           <div className='columns'>
             <div className='column col-12'>
@@ -83,6 +81,7 @@ class Room extends React.Component {
             </div>
           </div>
         </div>
+      </div>
       </div>
     );
   }

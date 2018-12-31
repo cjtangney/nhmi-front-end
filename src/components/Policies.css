@@ -1,0 +1,80 @@
+#policies-container .accordion {
+	overflow: hidden;
+}
+
+#policies-container .accordion .accordion-body {
+	padding-left: 1rem;
+	padding-right: 1rem;
+  padding-top: 0rem;  
+  background-color: #f2f2f3;
+  border-radius: 5px;
+  margin-bottom: 0.4rem;
+  transition: max-height .2s ease, padding-top .2s ease;
+  overflow: hidden;
+}
+
+.accordion input:checked ~ .accordion-body, .accordion[open] .accordion-body {
+  max-height: 50rem !important; 
+  padding-top: 1rem !important;
+}
+
+#policies-container .accordion .accordion-header {
+	padding-left: 0;
+	padding-right: 0;
+	cursor: pointer;
+	display: block;
+}
+
+#policies-container .accordion .accordion-header .divider.text-center {
+  padding-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+#policies-container .accordion .accordion-header .divider.text-center[data-content]::after {
+  color: #516D62;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: "Trajan Pro", Trajan, "Trajan Pro 3", serif;
+  -ms-transform: translateY(-1rem);
+  -webkit-transform: translateY(-1rem);
+  transform: translateY(-1rem);
+  z-index: 500;
+}
+
+.hvr-overline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+}
+
+.hvr-overline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  top: 0;
+  background: #516D62;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-overline-from-center.active:before, .hvr-overline-from-center.open:before {
+	-webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+	left: 0;
+	right: 0;
+}

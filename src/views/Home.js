@@ -1,17 +1,11 @@
 import React from 'react';
 
-import { CoverImage } from '../components/CoverImage';
 import { CardImgTop, CardImgLeft, CardImgRight, CardTextHero } from '../components/Cards';
 
 class Home extends React.Component {
   render() {
     return (
       <div>
-        {/* Cover Image */}
-      	<div>
-      		<CoverImage imgSrc={'http://localhost:1337/uploads/349378c553d7433cb7d5bbc5eb5124f9.jpg'}/>
-      	</div>
-
         {/* Main content */}
         <div className='container'>
           {/* Headline */}

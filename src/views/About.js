@@ -2,7 +2,6 @@ import React from 'react';
 
 import Image1 from '../res/img/home-carousel-01.jpg';
 
-import { CoverImage } from '../components/CoverImage';
 //import { CardImgTop, CardImgLeft, CardImgRight, CardTextHero } from '../components/Cards';
 import { DirectionPane } from '../components/Directions';
 
@@ -10,13 +9,10 @@ class About extends React.Component {
   render() {
     return (
       <div>
-      	<div>
-      		<CoverImage imgSrc={Image1}/>
-      	</div>
         <div className='container grid-xl'>
       		<div className='columns'>
       			<div className='column col-8 col-mx-auto'>
-              <div id='about-divider' className='divider text-center' data-content='WELCOME'></div>
+              <div id='about-divider' className='divider text-center' data-content='Welcome!'></div>
       			</div>
             <div className='column col-8 col-mx-auto'>
               <p>For over 200 years, the warmth of the blazing fireplace in the foyer of the New Hampshire Mountain Inn has been welcoming guests. The original farmhouse was built in the late 18th century and served as a boarding house for arriving railroad workers.</p>

@@ -2,7 +2,6 @@ import React from 'react';
 
 import '../components/Rooms.css';
 
-import { CoverImage } from '../components/CoverImage';
 import { CardImgLeftHero } from '../components/Cards';
 import { Tile } from '../components/Tile';
 
@@ -10,9 +9,6 @@ class Dining extends React.Component {
   render() {
     return (
       <div>
-      	<div>
-      		<CoverImage imgSrc={'http://localhost:1337/uploads/14ca5973c28e454eb3985a171121753e.jpg'}/>
-      	</div>
         <div className='container grid-xl' id='cover-img-overlay'>
           <div className='columns'>
             <div className='column col-12 col-mx-auto'>

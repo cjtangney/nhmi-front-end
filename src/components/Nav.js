@@ -28,17 +28,11 @@ const MobileNav = (e) => {
 		          <div className='accordion-body'>
 		            <ul className='menu menu-nav'>
 		            	<li className='menu-item'><a href='/rooms'>Our Rooms</a></li>
-		              <li className='menu-item'><a href='/courtyard-north'>Courtyard - North</a></li>
-		              <li className='menu-item'><a href='/courtyard-south'>Courtyard - South</a></li>
-		              <li className='menu-item'><a href='/eagle-pond-room'>Eagle Pond Room</a></li>
-		              <li className='menu-item'><a href='/hummingbird-room'>Hummingbird Room</a></li>
-		              <li className='menu-item'><a href='/kearsarge-room'>Kearsarge Room</a></li>
-		              <li className='menu-item'><a href='/library-room'>Library Room</a></li>
-		              <li className='menu-item'><a href='/meadow-room'>Meadow Room</a></li>
-		              <li className='menu-item'><a href='/quilt-room'>Quilt Room</a></li>
-		              <li className='menu-item'><a href='/timber-room'>Timber Room</a></li>
-		              <li className='menu-item'><a href='/stableside-suite'>Stableside Suite</a></li>
-		              <li className='menu-item'><a href='/vanderbilt-suite'>Vanderbilt Suite</a></li>
+			  					{e.roomData.map(data=>
+		  							data.map(room=>
+		  								<li className='menu-item' key={room['_id']}><a href={'/rooms/' + e.createSlug(room['Name'])}>{room['Name']}</a></li>
+		  							)
+			  					)}
 		            </ul>
 		          </div>
 		        </details>
@@ -136,9 +130,9 @@ const Nav = (e) => {
 		  				<ul className='menu menu-nav'>
 		  					<li className='menu-item'><a href='/rooms'>Our Rooms</a></li>
 		  					{e.roomData.map(data=>
-		  							data.map(room=>
-		  								<li className='menu-item'><a href={'/rooms/' + e.createSlug(room['Name'])}>{room['Name']}</a></li>
-		  							)
+	  							data.map(room=>
+	  								<li className='menu-item' key={room['_id']}><a href={'/rooms/' + e.createSlug(room['Name'])}>{room['Name']}</a></li>
+	  							)
 		  					)}
 						  </ul>
 		  			</div>

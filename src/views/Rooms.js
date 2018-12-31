@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { CoverImage } from '../components/CoverImage';
 import { CardRooms, CardTextHero, CardImgLeft } from '../components/Cards';
 
 class Rooms extends React.Component {
@@ -10,11 +9,6 @@ class Rooms extends React.Component {
   render() {
     return (
       <div className='full-height'>
-        {/* Cover Image */}
-      	<div>
-      		<CoverImage imgSrc={'http://localhost:1337/uploads/53e9d28d1556413b9dc30c2d8732471f.jpg'} />
-      	</div>
-
         <div className='container grid-xl' id='cover-img-overlay'>
           <div className='columns'>
             <div className='column col-12 col-mx-auto'>
