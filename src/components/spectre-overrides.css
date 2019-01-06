@@ -2805,4 +2805,13 @@ ol.policy-list {
 .full-height {
   height: 100%; }
 
+.btn.btn-primary > a {
+  color: #fff; }
+  .btn.btn-primary > a:hover {
+    text-decoration: none; }
+
+img.thumbnail {
+  max-width: 100%;
+  height: auto; }
+
 /*# sourceMappingURL=spectre-overrides.css.map */

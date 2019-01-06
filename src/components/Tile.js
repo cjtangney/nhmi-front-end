@@ -24,7 +24,7 @@ const AttractionTile = (e) => {
         <p className='tile-subtitle'>{e.tileAddress}</p>
       </div>
       <div className='tile-action'>
-        <button className='btn btn-primary'>Website</button>
+        <button className='btn btn-primary'><a href={e.tileLink} target="_blank">Website</a></button>
       </div>
     </div>
   );

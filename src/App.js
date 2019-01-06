@@ -8,6 +8,7 @@ import Dining from './views/Dining';
 import About from './views/About';
 import Policies from './views/Policies';
 import Attractions from './views/Attractions';
+import Weddings from './views/Weddings';
 
 import './components/spectre-overrides.css';
 import '../node_modules/spectre.css/dist/spectre-exp.min.css';
@@ -28,26 +29,37 @@ class App extends React.Component{
       rooms: '',
       suites: '',
       attractions: '',
+      menus: '',
       loading: true
     }
   }
   async componentDidMount() {
-    let roomResponse, suiteResponse, categoryResponse, rooms, suites, categories;
+    let roomResponse, suiteResponse, categoryResponse, menuResponse, rooms, suites, categories, menus;
     Promise.all([
       roomResponse = await fetch('http://localhost:1337/rooms'),
       suiteResponse = await fetch('http://localhost:1337/suites'),
       categoryResponse = await fetch('http://localhost:1337/categories'),
+      menuResponse = await fetch('http://localhost:1337/menus'),
     ]).then(
       rooms = await roomResponse.json(),
       suites = await suiteResponse.json(),
       categories = await categoryResponse.json(),
+      menus = await menuResponse.json(),
       this.setState({
         rooms: rooms,
         suites: suites,
         attractions: categories,
+        menus: menus,
         loading: false
       })
     );
+    window.addEventListener('scroll', this.handleScroll);
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+  handleScroll = (event) => {
+    (event.srcElement.scrollingElement.scrollTop > 275) ? document.getElementById('desktop-nav').classList.add('page-scroll') : document.getElementById('desktop-nav').classList.remove('page-scroll');
   }
   createSlug = (toSlug) => {
     if (toSlug) return toSlug.replace(/[^A-Za-z0-9-]+/g, '-');
@@ -77,7 +89,7 @@ class App extends React.Component{
               <Room roomData={[this.state.rooms, this.state.suites]} {...e} />
             )} />
             <Route exact path="/dining" render={ (e) => (
-                <Dining {...e} />
+                <Dining menus={this.state.menus} {...e} />
             )} />
             <Route exact path="/about-us" render={ (e) => (
               <About {...e} />
@@ -87,6 +99,9 @@ class App extends React.Component{
             )} />
             <Route exact path="/attractions" render={ (e) => (
               <Attractions data={this.state.attractions} {...e} />
+            )} />
+            <Route exact path="/weddings" render={ (e) => (
+              <Weddings {...e} />
             )} />
           </Switch>
           <Footer />

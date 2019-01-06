@@ -77,6 +77,20 @@ const CardImgLeftHero = (e) => {
 	);
 }
 
+	const CardImgRightHero = (e) => {
+	return (
+		/* CARD */
+		<div className='card img-hero img-right'>
+			<div className='card-body'>
+				{e.cardBody}
+			</div>
+			<div className='card-img'>
+				<img src={e.imgSrc} alt={e.altTxt} />
+			</div>
+		</div>
+	);
+}
+
 const CardRooms = (e) => {
 	return (
 		/* CARD */
@@ -108,4 +122,4 @@ const CardInfo = (e) => {
 	);
 }
 
-export { CardImgTop, CardImgLeft, CardImgRight, CardTextHero, CardImgLeftHero, CardRooms, CardInfo };
+export { CardImgTop, CardImgLeft, CardImgRight, CardTextHero, CardImgLeftHero, CardImgRightHero, CardRooms, CardInfo };

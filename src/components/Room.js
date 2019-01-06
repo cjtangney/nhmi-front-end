@@ -47,41 +47,40 @@ class Room extends React.Component {
   render() {
     //console.log(this.props.match.params.room);
     return (
-      <div>
-      
-      <div id='room-header'>
-        <h1>{this.state.room['Name']}</h1>
-      </div>
-      <div className='full-height'>
-        <div className='container grid-xl' id='cover-img-overlay'>
-          <div className='columns'>
-            <div className='column col-12'>
-              <CardImgLeft imgSrc={'http://localhost:1337' + this.state.room['Thumbnail'].url} className='img-responsive' cardBody={
-                <div>
-                  <h2>{this.state.room['Name']}</h2>
-                  <p className='text-large'>{this.state.room['Description']}</p>
-                  <h3>Amenities</h3>
-                  {this.createAmenitiesList(this.state.room['Amenities'])}
-                  <h3>Rates</h3>
-                  <table className='table text-center'>
-                    <tbody>
-                      <tr>
-                        <td><strong>Midweek</strong></td>
-                        <td><strong>Weekend</strong></td>
-                      </tr>
-                      <tr>
-                        <td>${this.state.room['Weeknight Rate']}.00</td>
-                        <td>${this.state.room['Weekend Rate']}.00</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <button className='btn btn-primary'>Book Your Stay!</button>
-                </div>
-              }/>
+      <div>      
+        <div id='room-header'>
+          <h1>{this.state.room['Name']}</h1>
+        </div>
+        <div className='full-height'>
+          <div className='container grid-xl' id='cover-img-overlay'>
+            <div className='columns'>
+              <div className='column col-12'>
+                <CardImgLeft imgSrc={'http://localhost:1337' + this.state.room['Thumbnail'].url} className='img-responsive' cardBody={
+                  <div>
+                    <h2>{this.state.room['Name']}</h2>
+                    <p className='text-large'>{this.state.room['Description']}</p>
+                    <h3>Amenities</h3>
+                    {this.createAmenitiesList(this.state.room['Amenities'])}
+                    <h3>Rates</h3>
+                    <table className='table text-center'>
+                      <tbody>
+                        <tr>
+                          <td><strong>Midweek</strong></td>
+                          <td><strong>Weekend</strong></td>
+                        </tr>
+                        <tr>
+                          <td>${this.state.room['Weeknight Rate']}.00</td>
+                          <td>${this.state.room['Weekend Rate']}.00</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <button className='btn btn-primary'>Book Your Stay!</button>
+                  </div>
+                }/>
+              </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
     );
   }

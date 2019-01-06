@@ -30,14 +30,14 @@ class Home extends React.Component {
           {/* Full-size layout */}
           <div className='column col-10 col-mx-auto' align='center'>
         		<div className='hide-md'>
-    					<CardImgLeft imgSrc={'http://localhost:1337/uploads/3b8075af5b574809936a830892ac71d4.jpg'} altTxt='Alt text' cardBody={
+    					<CardImgLeft imgSrc={'http://localhost:1337/uploads/35ac993fb41a4a9f9415b897e8a068c1.jpg'} altTxt='Alt text' cardBody={
                 <div>
                   <h3>Quaint, Mountain Charm!</h3>
                   <p>Located in scenic Wilmot, New Hampshire, the New Hampshire Mountain Inn exudes old-world charm. With a shared lounge, indoor pool, fully stocked bar, and more, we have something to keep every memeber of your family entertained on your next getaway.</p>
                   <button className='btn btn-primary'>Book Your Stay Today!</button>
                 </div>
               }/>
-    					<CardImgRight imgSrc={'http://localhost:1337/uploads/a8a640cafe6146268ea486da45c98e61.jpg'} altTxt='Alt text' cardBody={
+    					<CardImgRight imgSrc={'http://localhost:1337/uploads/3e1068ac9b4f47ebb4717d7f18310ffc.jpg'} altTxt='Alt text' cardBody={
                 <div>
                   <h3>Discover New Hampshire</h3>
                   <p>Our location in central New Hampshire is perfect for exploring our great state! Whether your looking to get some skiing in at nearby Ragged Mountain Resort, hike along one of our beautifully maintained trail systems, or maybe spend a day on the water at Newfound Lake, the New Hampshire Mountain Inn is your first stop for adventure!</p>
@@ -50,7 +50,7 @@ class Home extends React.Component {
   				<div className='show-md'>
         		<div className='columns'>
         			<div className='column col-12'>
-        				<CardImgTop imgSrc={'http://localhost:1337/uploads/3b8075af5b574809936a830892ac71d4.jpg'} altTxt='Alt text' cardBody={
+        				<CardImgTop imgSrc={'http://localhost:1337/uploads/35ac993fb41a4a9f9415b897e8a068c1.jpg'} altTxt='Alt text' cardBody={
                   <div>
                     <h3>Quaint, Mountain Charm!</h3>
                     <p>Located in scenic Wilmot, New Hampshire, the New Hampshire Mountain Inn is exudes old-world charm. With a shared lounge, indoor pool, fully stocked bar, and more, we have something to keep every memeber of your family entertained on your next getaway.</p>
@@ -59,7 +59,7 @@ class Home extends React.Component {
                 }/>
         			</div>
         			<div className='column col-12'>
-        				<CardImgTop imgSrc={'http://localhost:1337/uploads/a8a640cafe6146268ea486da45c98e61.jpg'} altTxt='Alt text' cardBody={
+        				<CardImgTop imgSrc={'http://localhost:1337/uploads/3e1068ac9b4f47ebb4717d7f18310ffc.jpg'} altTxt='Alt text' cardBody={
                   <div>
                     <h3>Discover New Hampshire</h3>
                     <p>Our location in central New Hampshire is perfect for exploring our great state! Whether your looking to get some skiing in at nearby Ragged Mountain Resort, hike along one of our beautifully maintained trail systems, or maybe spend a day on the water at Newfound Lake, the New Hampshire Mountain Inn is your first stop for adventure!</p>

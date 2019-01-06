@@ -14,12 +14,14 @@
 
 .navbar .navbar-section img.navbar-logo {
 	padding: 0.4rem 1rem 0.4rem 0;
-	height: 120px;
+	max-height: 120px;
+	height: 100%;
 }
 
 .navbar.hide-md .navbar-section > a {
 	color: #FFF;
 	line-height: 0;
+	height: 100%;
 }
 
 #hamburger-btn {
@@ -61,6 +63,18 @@
 
 #mobile-links > .menu.menu-nav > .menu-item > .accordion > .accordion-body > .menu.menu-nav > .menu-item a {
 	padding-right: 1rem;
+}
+
+#desktop-nav{
+	max-height: 7rem;
+	-webkit-transition: max-height 0.3s ease-out;
+  transition:  max-height 0.3s ease-out;
+}
+
+#desktop-nav.page-scroll{
+	max-height: 3rem;
+	-webkit-transition: max-height 0.3s ease-out;
+  transition:  max-height 0.3s ease-out;
 }
 
 #desktop-links > .popover {

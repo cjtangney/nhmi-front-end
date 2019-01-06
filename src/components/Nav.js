@@ -8,7 +8,6 @@ const MobileNav = (e) => {
 	const showMenu = () => {
 		document.getElementById('mobile-links').classList.toggle('d-hide');
 	}
-
 	return (
 		/* MOBILE NAV */
 		<div className='navbar show-md mobile-bar fixed'>
@@ -39,32 +38,15 @@ const MobileNav = (e) => {
 		      </li>
 
 		      <li className='menu-item'>
-		        {/* specials */}
-		        <details className='accordion'>
-		          <summary className='accordion-header'>
-		            SPECIALS &nbsp;
-		            <i className='icon icon-arrow-left mr-1 dark-grey'></i>
-		          </summary>
-		          <div className='accordion-body'>
-		            <ul className='menu menu-nav'>
-		              <li className='menu-item'><a href=''>Ongoing Deals</a></li>
-		              <li className='menu-item'><a href=''>Gift Certificates</a></li>
-		              <li className='menu-item'><a href=''>Special Offers</a></li>
-		            </ul>
-		          </div>
-		        </details>
-		      </li>
-
-		      <li className='menu-item'>
 		        {/* events */}
 		        <details className='accordion'>
 		          <summary className='accordion-header'>
-		            EVENTS &nbsp;
+		            FUNCTIONS &nbsp;
 		            <i className='icon icon-arrow-left mr-1 dark-grey'></i>
 		          </summary>
 		          <div className='accordion-body'>
 		            <ul className='menu menu-nav'>
-		              <li className='menu-item'><a href=''>Weddings</a></li>
+		              <li className='menu-item'><a href='/weddings'>Weddings</a></li>
 		              <li className='menu-item'><a href=''>Corporate Gatherings</a></li>
 		              <li className='menu-item'><a href=''>Reunions</a></li>
 		            </ul>
@@ -139,27 +121,13 @@ const Nav = (e) => {
 		  		</div>
 		  	</div>
 
-		  	{/* specials */}
-		  	<div className='popover popover-bottom'>
-		    	<a className='btn btn-link' onMouseEnter={onEnter} onMouseLeave={onExit}>SPECIALS</a>
-		    	<div className='popover-container'>
-		    		<div className='card'>
-			    		<ul className='menu menu-nav'>
-	              <li className='menu-item'><a href=''>Ongoing Deals</a></li>
-	              <li className='menu-item'><a href=''>Gift Certificates</a></li>
-	              <li className='menu-item'><a href=''>Special Offers</a></li>
-	            </ul>
-            </div>
-		    	</div>
-		    </div>
-
 		  	{/* events */}
 		    <div className='popover popover-bottom'>
-		    	<a className='btn btn-link' onMouseEnter={onEnter} onMouseLeave={onExit}>EVENTS</a>
+		    	<a className='btn btn-link' onMouseEnter={onEnter} onMouseLeave={onExit}>FUNCTIONS</a>
 		    	<div className='popover-container'>
 		    		<div className='card'>
 			    		<ul className='menu menu-nav'>
-	              <li className='menu-item'><a href=''>Weddings</a></li>
+	              <li className='menu-item'><a href='/weddings'>Weddings</a></li>
 	              <li className='menu-item'><a href=''>Corporate Gatherings</a></li>
 	              <li className='menu-item'><a href=''>Reunions</a></li>
 	            </ul>
