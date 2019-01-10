@@ -18,15 +18,16 @@
 }
 
 #wedding-lightbox{
-	align-items: start;
+	align-items: center;
 }
 
 #wedding-lightbox .modal-container{
 	max-height: 100%;
-	max-width: 100%;
+	max-width: 70vw;
+	flex-direction: row-reverse;
+	-ms-flex-direction: row-reverse;
 }
 
 #wedding-lightbox .modal-container>.modal-body>.content>img.img-responsive{
-	height: 85vh;
 	margin: 0 auto;
 }
